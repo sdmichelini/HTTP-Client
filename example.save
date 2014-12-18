@@ -1,0 +1,69 @@
+HTTP/1.1 200 OK
+Server: Cowboy
+Connection: close
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 2640
+Etag: W/"MwQaZlUnagq7hlOCNXfVpg=="
+Date: Thu, 18 Dec 2014 01:53:35 GMT
+Via: 1.1 vegur
+
+<html>
+<head>
+	<title>Stephen Michelini's Website</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	
+
+	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!--Title for Desktop-->
+<h1 class='main_content hidden-xs'>Welcome to Stephen Michelini's Website</h1>
+<!--For Mobile-->
+<h1 class='main_content visible-xs'>Stephen Michelini</h1>
+	<div class="panel panel-default main_text">
+		<div class="panel-header content_title">
+			<h3>Who am I?</h3>
+		</div>
+  		<div class="panel-body">
+  			Hi, I am Stephen Michelini. I am an undergraduate at WPI studying Electrical and Computer Engineering.
+  			<br>
+  			<br>
+    		I am a young software developer with expierience in a variety of programming languages such as C++, Java, Node.js, HTML5, CSS3, Javascript and many more. I have been learning programming languages since my freshman year in high school when
+    		I first started learning C++.
+    		<br>
+    		<br>
+    		Some of the areas I have studied have included computer networks and mobile-design. In fact, this whole site is mobile-friendly thanks to CSS Media Queries and Bootstrap.
+    		<br>
+    		<br>
+    		<span class='hidden-xs'><strong>Try it!</strong> Move the size of the window and you'll see the page transform!<br><br></span>
+    		
+    		I have completed and am working on various projects. One of them is a lightweight C++ 11 Webserver with templating ability. It has a full routing system built in. Feel free to head over to my <a href='#'>Projects</a> page to find out more or my <a href='https://github.com/sdmichelini'>GitHub</a> to see it.
+  		</div>
+	</div>
+	<!--Mobile Links-->
+	<div class = 'footer visible-xs'>
+		<a href='/about'>About</a> | <a href='/projects'>Projects</a> | <a href='https://github.com/sdmichelini'>Github</a>
+	</div>
+	<!--Desktop Links-->
+	<div class = 'footer hidden-xs'>
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container-fluid">
+          		<div id="navbar" class="navbar-collapse collapse">
+          			<ul class="nav navbar-nav">
+          				<li class="active"><a href='#'>Home</a></li>
+          				<li><a href='/about'>About</a></li>
+          				<li><a href='/projects'>Projects</a></li>
+          				<li><a href='https://github.com/sdmichelini'>GitHub</a></li>
+          				<li><a href='https://www.linkedin.com/in/sdmichelini'>LinkedIn</a></li>
+          			</ul>
+          		</div>
+          	</div>
+		</nav>
+	</div>
+
+</body>
+</html>

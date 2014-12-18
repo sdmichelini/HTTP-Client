@@ -1,0 +1,34 @@
+Webclient
+
+Author: Stephen Michelini
+
+Usage: ./weblclient (URL) (options)
+
+Options are -f for file, next param must be filename, mutually exclusive with -nf, prints HTTP response to filename
+-nf print to console, prints HTTP response to console
+-pkt collect packet stats, time collected and bytes read
+-ping calculates ping time and prints it to console
+-info Looks at tcp_info structure for RTT and RTT variance and prints it to console
+
+Not implemented:
+Can't change port of webserver from port 80 from the params. Must be hardcoded to switch port
+
+Features:
+HTTPS block- URLs requested to https are blocked as SSL is not implemented in this program, also the port 443 is blocked
+tcp_socket - seperate base class for a tcp socket which webclient is abstracted upon. 
+
+Sample output:
+Command:
+./webclient facebook.com -pkt -ping
+Output to Console:
+HTTP/1.1 302 Found
+Location: https://facebook.com/
+Content-Type: text/html; charset=utf-8
+X-FB-Debug: 00ZNb/ryNtEoM550Ol2iWnK7//3X0A/J5yQ6J9PHeIHWDQWk9fSs93MZfpiuWGVkN3e1kx0oKVBS/oBjqEP19w==
+Date: Tue, 25 Nov 2014 15:12:00 GMT
+Connection: close
+Content-Length: 0
+
+
+Packet 1 - Time: 283 Bytes: 272
+Request Took: 187 milliseconds.
